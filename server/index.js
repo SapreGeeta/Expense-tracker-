@@ -17,7 +17,7 @@ const connectDB = async () => {
     const conn = await mongoose.connect(process.env.MONGODB_URL)
 
     if (conn) {
-        console.log(`MOngoDB connected Successfully...✅`);
+        console.log(`MOngoDB connected Successfully`);
     }
 };
 
