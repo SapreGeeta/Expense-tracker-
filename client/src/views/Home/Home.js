@@ -30,7 +30,7 @@ function Home() {
     }
     toast.loading('Loading transactions...')
 
-    const response = await axios.get(`${process.env.REACT_APP_API_URL}/transactions?userId=${user._id}`)
+    const response = await axios.get(`${'https://expense-tracker-3-9l7z.onrender.com'}/transactions?userId=${user._id}`)
 
     const allTransactions = response.data.data
     toast.dismiss()

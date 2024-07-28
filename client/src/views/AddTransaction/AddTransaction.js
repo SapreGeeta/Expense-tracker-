@@ -23,7 +23,7 @@ function AddTransaction() {
   }, [])
 
   const addTransaction = async () => {
-    const response = await axios.post(`${process.env.REACT_APP_API_URL}/transaction`, {
+    const response = await axios.post(`${'https://expense-tracker-3-9l7z.onrender.com'}/transaction`, {
       title,
       amount,
       type,

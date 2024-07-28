@@ -5,7 +5,7 @@ import axios from "axios";
 function TransactionCard({ _id, title, amount, category, type, createdAt, loadTransactions }) {
 
   const deleteTransaction = async () => {
-    const response = await axios.delete(`${process.env.REACT_APP_API_URL}/transaction/${_id}`)
+    const response = await axios.delete(`${'https://expense-tracker-3-9l7z.onrender.com'}/transaction/${_id}`)
 
     toast.success(response.data.message)
 
